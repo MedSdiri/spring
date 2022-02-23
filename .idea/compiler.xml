@@ -12,6 +12,7 @@
         <module name="Spring-04-Abstraction" />
         <module name="Spring-01-Core-IoC" />
         <module name="Spring-03-Core-DI" />
+        <module name="Spring-05-Core-BeanScope" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="Spring-02-Core-Wiring" target="11" />
       <module name="Spring-03-Core-DI" target="11" />
       <module name="Spring-04-Abstraction" target="11" />
+      <module name="Spring-05-Core-BeanScope" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
