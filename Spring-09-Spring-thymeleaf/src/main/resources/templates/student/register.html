@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Student</title>
+</head>
+<body>
+
+<h2>Welcome Student</h2>
+<h2 th:text="${students.get(0).firstName}"></h2>
+<h2 th:text="${students.get(0).lastName}"></h2>
+<!-- concatination -->
+<h2 th:text="${'Welcome '+students.get(0).firstName}"></h2>
+</body>
+</html>
