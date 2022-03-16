@@ -11,5 +11,19 @@
 <h2 th:text="${students.get(0).lastName}"></h2>
 <!-- concatination -->
 <h2 th:text="${'Welcome '+students.get(0).firstName}"></h2>
+
+<!--Links-->
+<a th:href="@{https://google.com}">google</a>
+<br>
+<br>
+<a th:href="@{/student/welcome}">Welcome Page</a>
+<!--With parameters-->
+<br><br>
+<a th:href="@{/student/welcome(id=${students.get(0).firstName})}">Welcome Page with Params</a>
+<!--Iteration-->
+<br><br>
+<ul>
+    <li th:each="student : ${students}" th:text="${student.firstName}"></li>
+</ul>
 </body>
 </html>
